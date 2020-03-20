@@ -10,10 +10,10 @@ form.onsubmit = e => {
 
 const buscarClimaPorCiudad = (ciudad) => {
 
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&units=metric&appid=ea942384626993fc1f02a9234e7791cc`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&units=metric&appid=ea942384626993fc1f02a9234e7791cc`)
 .then(res => res.json())
 .then(data => { 
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${ciudad}&units=metric&appid=ea942384626993fc1f02a9234e7791cc`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${ciudad}&units=metric&appid=ea942384626993fc1f02a9234e7791cc`)
     .then(ext => ext.json())
     .then(info => {
         console.log(info)
