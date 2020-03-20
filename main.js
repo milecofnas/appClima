@@ -39,7 +39,7 @@ data.weather.forEach(element => {
 
 <div class = "main">
 <div class = "imagen">
-<img src="http://openweathermap.org/img/wn/${element.icon}@2x.png"class="icono">
+<img src="https://openweathermap.org/img/wn/${element.icon}@2x.png"class="icono">
 <p>${temperatura} <span class="celcius"><sup>C°</sup></span></p>
 </div> 
 
@@ -67,7 +67,7 @@ acc += `
 <div id="cardExtendido">
 <div>
 <p class="hora">${hora}</p>
-<img src="http://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png">
+<img src="https://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png">
 </div>
 <div class="infoExtendido">
     <p>${temperatura} <span>C°</span></p>
